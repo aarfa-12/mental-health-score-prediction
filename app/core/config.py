@@ -1,0 +1,10 @@
+TOP_COUNTRIES = ['Other',
+                 'India',
+                 'USA',
+                 'Canada',
+                 'Australia',
+                 'UK',
+                 'Germany',
+                 'Mexico',
+                 'Turkey',
+                 'France']

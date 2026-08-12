@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Mental Health Assessment | MindSense AI
+    </title>
+
+    <meta name="description"
+          content="AI Powered Mental Health Assessment">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="/assets/css/main.css">
+
+    <link rel="stylesheet"
+          href="/assets/css/predict.css">
+
+    <link rel="stylesheet"
+          href="/assets/css/responsive.css">
+
+</head>
+
+<body>
+
+<!-- =====================================================
+Navbar
+====================================================== -->
+
+<header class="navbar">
+
+    <div class="container">
+
+        <a href="/"
+           class="logo">
+
+            <i class="bi bi-heart-pulse-fill"></i>
+
+            MindSense AI
+
+        </a>
+
+        <nav>
+
+            <ul>
+
+                <li>
+
+                    <a href="/">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a class="active"
+                       href="/predict-page">
+
+                        Predict
+
+                    </a>
+
+                </li>
+
+               
+
+                <li>
+
+                    <a href="/about-page">
+
+                        About
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="/contact-page">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <button id="themeToggle"
+                aria-label="Toggle Theme">
+
+            <i class="bi bi-moon-stars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+<!-- =====================================================
+Page Header
+====================================================== -->
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <span class="page-badge">
+
+            AI Assessment
+
+        </span>
+
+        <h1>
+
+            Mental Health Assessment
+
+        </h1>
+
+        <p>
+
+            Complete the assessment below.
+
+            It takes less than one minute.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+Progress Steps
+====================================================== -->
+
+<section class="progress-wrapper">
+
+    <div class="container">
+
+        <div class="progress-steps">
+
+            <div class="step active">
+
+                <div class="circle">
+
+                    1
+
+                </div>
+
+                <span>
+
+                    Personal
+
+                </span>
+
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step">
+
+                <div class="circle">
+
+                    2
+
+                </div>
+
+                <span>
+
+                    Social
+
+                </span>
+
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step">
+
+                <div class="circle">
+
+                    3
+
+                </div>
+
+                <span>
+
+                    Lifestyle
+
+                </span>
+
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step">
+
+                <div class="circle">
+
+                    4
+
+                </div>
+
+                <span>
+
+                    Review
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+Assessment Form
+====================================================== -->
+
+<section class="prediction-form">
+
+<div class="container">
+
+<form id="predictionForm">
+
+<!-- ======================================
+Personal Information
+====================================== -->
+
+<div class="form-card">
+
+<h2>
+
+<i class="bi bi-person-circle"></i>
+
+Personal Information
+
+</h2>
+
+<div class="form-grid">
+
+<!-- Age -->
+
+<div class="form-group">
+
+<label for="age">
+
+Age
+
+</label>
+
+<input
+type="number"
+id="age"
+name="age"
+min="10"
+max="100"
+required>
+
+<small class="error"></small>
+
+</div>
+
+<!-- Gender -->
+
+<div class="form-group">
+
+<label for="gender">
+
+Gender
+
+</label>
+
+<select
+id="gender"
+name="gender"
+required>
+
+<option value="">
+
+Select
+
+</option>
+
+<option>
+
+Male
+
+</option>
+
+<option>
+
+Female
+
+</option>
+
+</select>
+
+<small class="error"></small>
+
+</div>
+
+<!-- Country -->
+
+<div class="form-group">
+
+<label for="country">
+
+Country
+
+</label>
+
+<select
+id="country"
+name="country"
+required>
+
+<option>
+
+India
+
+</option>
+
+<option>
+
+USA
+
+</option>
+
+<option>
+
+Canada
+
+</option>
+
+<option>
+
+Australia
+
+</option>
+
+<option>
+
+UK
+
+</option>
+
+<option>
+
+Germany
+
+</option>
+
+<option>
+
+Mexico
+
+</option>
+
+<option>
+
+Turkey
+
+</option>
+
+<option>
+
+France
+
+</option>
+
+<option>
+
+Other
+
+</option>
+
+</select>
+
+</div>
+
+<!-- Academic Level -->
+
+<div class="form-group">
+
+<label>
+
+Academic Level
+
+</label>
+
+<select
+id="academic_level"
+name="academic_level"
+required>
+
+<option value="">
+
+Select
+
+</option>
+
+<option>
+
+High School
+
+</option>
+
+<option>
+
+Undergraduate
+
+</option>
+
+<option>
+
+Graduate
+
+</option>
+
+</select>
+
+<small class="error"></small>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ======================================
+Social Media Information
+====================================== -->
+
+<div class="form-card">
+
+    <h2>
+
+        <i class="bi bi-phone"></i>
+
+        Social Media Usage
+
+    </h2>
+
+    <div class="form-grid">
+
+        <!-- Platform -->
+
+        <div class="form-group">
+
+            <label for="most_used_platform">
+
+                Most Used Platform
+
+            </label>
+
+            <select
+                id="most_used_platform"
+                name="most_used_platform"
+                required>
+
+                <option value="">Select Platform</option>
+
+                <option>Facebook</option>
+                <option>Instagram</option>
+                <option>LinkedIn</option>
+                <option>Snapchat</option>
+                <option>Twitter</option>
+                <option>YouTube</option>
+                <option>TikTok</option>
+                <option>LINE</option>
+                <option>KakaoTalk</option>
+                <option>VKontakte</option>
+                <option>WhatsApp</option>
+                <option>WeChat</option>
+
+            </select>
+
+            <small class="error"></small>
+
+        </div>
+
+        <!-- Purpose -->
+
+        <div class="form-group">
+
+            <label for="purpose_of_use">
+
+                Purpose of Use
+
+            </label>
+
+            <select
+                id="purpose_of_use"
+                name="purpose_of_use"
+                required>
+
+                <option value="">Select</option>
+
+                <option>Networking</option>
+                <option>Education</option>
+                <option>Entertainment</option>
+                <option>News</option>
+
+            </select>
+
+            <small class="error"></small>
+
+        </div>
+
+        <!-- Usage -->
+
+        <div class="form-group">
+
+            <label for="avg_daily_usage_hours">
+
+                Daily Usage (Hours)
+
+            </label>
+
+            <input
+                type="number"
+                id="avg_daily_usage_hours"
+                name="avg_daily_usage_hours"
+                min="0"
+                max="24"
+                step="0.5"
+                required>
+
+            <small class="error"></small>
+
+        </div>
+
+        <!-- Unlocks -->
+
+        <div class="form-group">
+
+            <label for="daily_unlocks">
+
+                Daily Phone Unlocks
+
+            </label>
+
+            <input
+                type="number"
+                id="daily_unlocks"
+                name="daily_unlocks"
+                min="0"
+                required>
+
+            <small class="error"></small>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ======================================
+Lifestyle
+====================================== -->
+
+<div class="form-card">
+
+    <h2>
+
+        <i class="bi bi-heart-pulse"></i>
+
+        Lifestyle Information
+
+    </h2>
+
+    <div class="form-grid">
+
+        <!-- Study Hours -->
+
+        <div class="form-group">
+
+            <label for="study_hours">
+
+                Study Hours
+
+            </label>
+
+            <input
+                type="number"
+                id="study_hours"
+                name="study_hours"
+                min="0"
+                max="24"
+                step="0.5"
+                required>
+
+            <small class="error"></small>
+
+        </div>
+
+        <!-- Physical Activity -->
+
+        <div class="form-group">
+
+            <label for="physical_activity_hours">
+
+                Physical Activity (Hours)
+
+            </label>
+
+            <input
+                type="number"
+                id="physical_activity_hours"
+                name="physical_activity_hours"
+                min="0"
+                max="24"
+                step="0.5"
+                required>
+
+            <small class="error"></small>
+
+        </div>
+
+        <!-- Sleep -->
+
+        <div class="form-group">
+
+            <label for="sleep_hours_per_night">
+
+                Sleep Per Night (Hours)
+
+            </label>
+
+            <input
+                type="number"
+                id="sleep_hours_per_night"
+                name="sleep_hours_per_night"
+                min="0"
+                max="24"
+                step="0.5"
+                required>
+
+            <small class="error"></small>
+
+        </div>
+
+        <!-- Stress -->
+
+        <div class="form-group">
+
+            <label for="stress_level">
+
+                Stress Level
+
+            </label>
+
+            <select
+                id="stress_level"
+                name="stress_level"
+                required>
+
+                <option value="">Select</option>
+
+                <option>Low</option>
+
+                <option>Medium</option>
+
+                <option>High</option>
+
+                <option>Very High</option>
+
+            </select>
+
+            <small class="error"></small>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ======================================
+Review Section
+====================================== -->
+
+<div class="form-card review-card">
+
+    <h2>
+
+        <i class="bi bi-check2-circle"></i>
+
+        Review Your Information
+
+    </h2>
+
+    <p>
+
+        Please verify that all information entered is accurate.
+        The prediction will be generated using our Machine Learning model.
+
+    </p>
+
+    <div class="review-grid">
+
+        <div class="review-item">
+
+            <i class="bi bi-shield-check"></i>
+
+            <span>Data is processed securely.</span>
+
+        </div>
+
+        <div class="review-item">
+
+            <i class="bi bi-lightning-charge"></i>
+
+            <span>Prediction generated in real time.</span>
+
+        </div>
+
+        <div class="review-item">
+
+            <i class="bi bi-cpu"></i>
+
+            <span>Powered by Machine Learning.</span>
+
+        </div>
+
+        <div class="review-item">
+
+            <i class="bi bi-bar-chart-line"></i>
+
+            <span>Explainable AI support.</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ======================================
+Action Buttons
+====================================== -->
+
+<div class="form-actions">
+
+    <button
+        type="reset"
+        class="btn-secondary">
+
+        <i class="bi bi-arrow-counterclockwise"></i>
+
+        Reset
+
+    </button>
+
+    <button
+        id="predictBtn"
+        type="submit"
+        class="btn-primary">
+
+        <span class="btn-text">
+
+            Predict Mental Health Score
+
+        </span>
+
+        <span
+            class="spinner hidden">
+
+        </span>
+
+    </button>
+
+</div>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- ======================================
+Prediction Result Section
+Initially Hidden
+====================================== -->
+
+<section
+    id="predictionResult"
+    class="prediction-result hidden">
+
+    <div class="container">
+
+        <div class="result-card">
+
+            <div class="result-header">
+
+                <h2>
+                    Prediction Result
+                </h2>
+
+                <span id="predictionDate">
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<div class="container">
+
+    <div class="result-card glass-card">
+
+        <!-- ===============================
+             Result Header
+        ================================ -->
+
+        <div class="result-header">
+
+            <div>
+
+                <span class="result-tag">
+
+                    AI Prediction
+
+                </span>
+
+                <h2>
+
+                    Your Mental Health Assessment
+
+                </h2>
+
+            </div>
+
+            <div class="prediction-time">
+
+                <i class="bi bi-calendar-event"></i>
+
+                <span id="predictionDate">
+
+                    --
+
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- ===============================
+             Main Result Grid
+        ================================ -->
+
+        <div class="result-grid">
+
+            <!-- Left -->
+
+            <div class="score-panel">
+
+                <div class="progress-ring">
+
+                    <svg width="230"
+                         height="230">
+
+                        <circle
+                            class="ring-bg"
+                            cx="115"
+                            cy="115"
+                            r="95">
+                        </circle>
+
+                        <circle
+                            id="progressCircle"
+                            class="ring-progress"
+                            cx="115"
+                            cy="115"
+                            r="95">
+                        </circle>
+
+                    </svg>
+
+                    <div class="score-content">
+
+                        <h1 id="scoreValue">
+
+                            0.00
+
+                        </h1>
+
+                        <span>
+
+                            /10
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div
+                    id="riskBadge"
+                    class="risk-badge">
+
+                    Calculating...
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="prediction-details">
+
+                <div class="info-card">
+
+                    <i class="bi bi-graph-up-arrow"></i>
+
+                    <div>
+
+                        <h4>
+
+                            Confidence
+
+                        </h4>
+
+                        <p id="confidenceValue">
+
+                            96%
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <i class="bi bi-lightning-charge-fill"></i>
+
+                    <div>
+
+                        <h4>
+
+                            Prediction Status
+
+                        </h4>
+
+                        <p class="status-success">
+
+                            Completed
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <i class="bi bi-cpu-fill"></i>
+
+                    <div>
+
+                        <h4>
+
+                            AI Model
+
+                        </h4>
+
+                        <p>
+
+                            Mental Health Regression Model
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <i class="bi bi-clock-history"></i>
+
+                    <div>
+
+                        <h4>
+
+                            Processing Time
+
+                        </h4>
+
+                        <p>
+
+                            &lt; 1 Second
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ===============================
+             Gauge Meter
+        ================================ -->
+
+        <div class="gauge-section">
+
+            <h3>
+
+                Wellness Indicator
+
+            </h3>
+
+            <div class="gauge-wrapper">
+
+                <div class="gauge">
+
+                    <div id="gaugeNeedle">
+
+                    </div>
+
+                </div>
+
+                <div class="gauge-labels">
+
+                    <span>
+
+                        Critical
+
+                    </span>
+
+                    <span>
+
+                        Attention
+
+                    </span>
+
+                    <span>
+
+                        Moderate
+
+                    </span>
+
+                    <span>
+
+                        Healthy
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ===============================
+             Summary
+        ================================ -->
+
+        <div class="summary-card">
+
+            <h3>
+
+                Prediction Summary
+
+            </h3>
+
+            <p id="predictionSummary">
+
+                Your assessment has been successfully completed.
+                Based on the provided information,
+                the Machine Learning model estimated your
+                mental health score.
+
+                Personalized explanations and recommendations
+                are displayed below.
+
+            </p>
+
+        </div>
+
+        <!-- ===============================
+             Metrics
+        ================================ -->
+
+        <div class="metrics-grid">
+
+            <div class="metric-card">
+
+                <i class="bi bi-moon-stars-fill"></i>
+
+                <h4>
+
+                    Sleep
+
+                </h4>
+
+                <div
+                    id="sleepMetric"
+                    class="mini-progress">
+
+                </div>
+
+            </div>
+
+            <div class="metric-card">
+
+                <i class="bi bi-bicycle"></i>
+
+                <h4>
+
+                    Activity
+
+                </h4>
+
+                <div
+                    id="activityMetric"
+                    class="mini-progress">
+
+                </div>
+
+            </div>
+
+            <div class="metric-card">
+
+                <i class="bi bi-emoji-frown-fill"></i>
+
+                <h4>
+
+                    Stress
+
+                </h4>
+
+                <div
+                    id="stressMetric"
+                    class="mini-progress">
+
+                </div>
+
+            </div>
+
+            <div class="metric-card">
+
+                <i class="bi bi-phone-fill"></i>
+
+                <h4>
+
+                    Social Usage
+
+                </h4>
+
+                <div
+                    id="usageMetric"
+                    class="mini-progress">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =====================================================
+SHAP Explainability
+====================================================== -->
+
+<section class="shap-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                Explainable AI
+
+            </span>
+
+            <h2>
+
+                Why did the model predict this score?
+
+            </h2>
+
+            <p>
+
+                 See which factors contributed most to your predicted score.
+                 A positive impact increases the predicted score, while a
+                 negative impact decreases it.
+            </p>
+
+        </div>
+
+        <div class="glass-card">
+
+            <div class="shap-grid">
+
+                <div class="positive-features">
+
+                    <h3>
+
+                        <i class="bi bi-arrow-up-circle-fill"></i>
+
+                        Increases Score
+
+                    </h3>
+
+                    <div id="positiveFactors">
+
+                        <div class="placeholder-bar"></div>
+                        <div class="placeholder-bar"></div>
+                        <div class="placeholder-bar"></div>
+                        <div class="placeholder-bar"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="negative-features">
+
+                    <h3>
+
+                        <i class="bi bi-arrow-down-circle-fill"></i>
+
+                        Decreases Score
+
+                    </h3>
+
+                    <div id="negativeFactors">
+
+                        <div class="placeholder-bar"></div>
+                        <div class="placeholder-bar"></div>
+                        <div class="placeholder-bar"></div>
+                        <div class="placeholder-bar"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================================
+     PERSONALIZED RECOMMENDATIONS
+     ========================================================== -->
+
+<section id="recommendationsSection" class="recommendations-section hidden">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-eyebrow">
+                Personalized Guidance
+            </span>
+
+            <h2>
+                Personalized Recommendations
+            </h2>
+
+            <p>
+                These suggestions are based on your reported habits
+                and the factors that influenced your prediction.
+            </p>
+
+        </div>
+
+        <div
+            id="recommendationsContainer"
+            class="recommendations-grid">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================================
+     Disclaimer
+================================= -->
+
+<section 
+    id="disclaimerSection"
+    class="disclaimer-section hidden">
+
+    <div class="container">
+
+        <div class="disclaimer-card">
+
+            <h3>
+                ⚠️ Disclaimer
+            </h3>
+
+            <p>
+                This AI-based assessment is intended for general
+                wellness awareness only. It is not a medical diagnosis
+                and should not be considered a substitute for advice,
+                diagnosis, or treatment from a qualified mental health
+                professional.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+Prediction History
+====================================================== -->
+
+<section class="history-section">
+
+    <div class="container">
+
+        <div class="history-header">
+
+            <h2>
+                Prediction History
+            </h2>
+
+            <div class="history-actions">
+
+                <button
+                    class="btn-secondary"
+                    id="clearHistory">
+
+                    <i class="bi bi-trash"></i>
+
+                    Clear History
+
+                </button>
+
+                <button
+                    class="btn-secondary"
+                    id="downloadReport">
+
+                    <i class="bi bi-file-earmark-pdf"></i>
+
+                    Download Report
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Prediction History Table -->
+
+        <div class="history-table-wrapper">
+
+            <table class="history-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Date & Time</th>
+
+                        <th>Score</th>
+
+                        <th>Risk</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="historyTable">
+
+                    <tr>
+
+                        <td colspan="4">
+                            Loading prediction history...
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+Footer
+====================================================== -->
+
+<footer>
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h3>
+
+                MindSense AI
+
+            </h3>
+
+            <p>
+
+                AI Powered Mental Health Assessment
+                & Recommendation Platform.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h4>
+
+                Quick Links
+
+            </h4>
+
+            <a href="/">Home</a>
+            <a href="/about-page">About</a>
+            <a href="/contact-page">Contact</a>
+
+        </div>
+
+        <div>
+
+            <h4>
+
+                Resources
+
+            </h4>
+
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+
+        </div>
+
+        <div>
+
+            <h4>
+
+                Connect
+
+            </h4>
+
+            <a href="#">
+                <i class="bi bi-github"></i>
+            </a>
+
+            <a href="#">
+                <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a href="#">
+                <i class="bi bi-envelope-fill"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+
+        © 2026 MindSense AI.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+<!-- =====================================================
+Scripts
+====================================================== -->
+
+<script
+    type="module"
+    src="/assets/js/prediction.js">
+
+</script>
+
+<script
+    type="module"
+    src="/assets/js/scripts.js">
+
+</script>
+
+</body>
+
+</html>
