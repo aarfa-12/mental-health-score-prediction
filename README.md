@@ -155,16 +155,15 @@ The complete application is deployed on **Render** and can be accessed through t
 
 
 
-## 📂 **Project Structure**
+## 📂 Project Structure
 
-
-   mental-health-score-prediction/
+```text
+mental-health-score-prediction/
 │
 ├── frontend/
 │   ├── assets/
 │   │   ├── css/
-│   │   ├── js/
-│   │  
+│   │   └── js/
 │   │
 │   ├── index.html
 │   ├── predict.html
@@ -185,11 +184,7 @@ The complete application is deployed on **Render** and can be accessed through t
 ├── .gitignore
 └── README.md
 
-
-
-## 🧠 How It Works
-
-```text
+🧠 How It Works
 User Input
     ↓
 Frontend Form Validation
@@ -206,72 +201,58 @@ Mental Health Score
 │ Prediction History    │
 │ PDF Report            │
 └───────────────────────┘
-
-
-
- ## ⚙️ **Run Locally**
-
-1. Clone the repository
-
+⚙️ Run Locally
+1. Clone the Repository
 git clone https://github.com/aarfa-12/mental-health-score-prediction.git
-
-2. Navigate to the project
-
+2. Navigate to the Project
 cd mental-health-score-prediction
-
-3. Create a virtual environment
-
+3. Create a Virtual Environment
 python -m venv .venv
+4. Activate the Environment
 
-4. Activate the environment
-
-**Windows:**
+Windows:
 
 .venv\Scripts\activate
 
-**Linux/macOS:**
+Linux/macOS:
 
 source .venv/bin/activate
-
-5. Install dependencies
-
+5. Install Dependencies
 pip install -r requirements.txt
-
-6. Start the application
-
+6. Start the Application
 uvicorn main:app --reload
 
-Open:
+Open the application in your browser:
 
 http://127.0.0.1:8000
-
-
-## 🌐 **Deployment**
+🌐 Deployment
 
 The application is deployed on Render.
 
-The deployed application uses the FastAPI backend to serve the frontend and handle the machine learning prediction workflow through a single application URL.
+The FastAPI backend serves the frontend and handles the machine learning prediction workflow through a single application URL.
 
-**Production URL:**
+Production URL:
 
 https://mental-health-score-prediction-61cy.onrender.com
 
-
-## ⚠️ **Disclaimer**
+⚠️ Disclaimer
 
 MindSense is an educational machine learning project.
 
 The predictions and recommendations provided by this application should not be considered medical advice, diagnosis, or treatment and should not replace professional medical or mental health evaluation.
 
-
-## 👩‍💻 **Author**
+👩‍💻 Author
 
 Aarfa Fatima
 
 B.Tech — Computer Science & Engineering
 Specialization: Artificial Intelligence & Machine Learning
 
-**GitHub:**
+GitHub:
 https://github.com/aarfa-12
 
 ⭐ If you find this project useful or interesting, consider giving the repository a star.
+
+
+
+
