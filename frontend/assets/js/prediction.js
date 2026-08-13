@@ -3,7 +3,7 @@
    Prediction Controller
    ========================================================== */
 
-import { predict } from "./api.js";
+import { predict, API_BASE_URL } from "./api.js";
 
 import {
     validateForm,
@@ -503,7 +503,7 @@ async function displayPredictionHistory() {
     try {
 
         const response = await fetch(
-            "/prediction-history"
+            `${API_BASE_URL}/prediction-history`
         );
 
         if (!response.ok) {
@@ -567,7 +567,7 @@ async function clearPredictionHistory() {
     try {
 
         const response = await fetch(
-            "/prediction-history",
+            `${API_BASE_URL}/prediction-history`,
             {
                 method: "DELETE"
             }
@@ -611,7 +611,7 @@ async function downloadPredictionReport() {
     try {
 
         const response = await fetch(
-            "/download-report"
+            `${API_BASE_URL}/prediction-history`
         );
 
         if (!response.ok) {
