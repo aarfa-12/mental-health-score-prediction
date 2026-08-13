@@ -108,6 +108,7 @@ export async function healthCheck() {
 ---------------------------------------------------------- */
 
 export async function predict(formData) {
+    
 
     return await request("/predict", {
 

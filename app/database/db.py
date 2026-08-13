@@ -2,7 +2,7 @@ import sqlite3
 import json
 from pathlib import Path
 from datetime import datetime
-
+from zoneinfo import ZoneInfo
 
 DB_PATH = Path("app/database/predictions.db")
 
@@ -57,7 +57,7 @@ def save_prediction(
         VALUES (?, ?, ?, ?, ?, ?)
         """,
         (
-            datetime.now().isoformat(),
+            datetime.now(ZoneInfo("Asia/Kolkata")).isoformat(),
             score,
             risk,
             status,

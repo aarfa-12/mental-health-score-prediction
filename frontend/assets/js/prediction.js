@@ -1,6 +1,7 @@
 /* ==========================================================
    MindSense AI
-   Prediction Controller
+   2.
+   3 ion Controller
    ========================================================== */
 
 import { predict, API_BASE_URL } from "./api.js";
@@ -611,7 +612,7 @@ async function downloadPredictionReport() {
     try {
 
         const response = await fetch(
-            `${API_BASE_URL}/prediction-history`
+            `${API_BASE_URL}/download-report`
         );
 
         if (!response.ok) {
