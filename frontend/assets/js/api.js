@@ -13,7 +13,7 @@
  * https://your-api-domain.com
  */
 
-const API_BASE_URL = "https://mental-health-score-prediction-61cy.onrender.com";
+export const API_BASE_URL = "https://mental-health-score-prediction-61cy.onrender.com";
 
 /* ----------------------------------------------------------
    Request Timeout
