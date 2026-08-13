@@ -155,9 +155,9 @@ The complete application is deployed on **Render** and can be accessed through t
 
 
 
-## 📂 Project Structure
+```## 📂 Project Structure
 
-```text
+text
 mental-health-score-prediction/
 │
 ├── frontend/
@@ -251,7 +251,7 @@ Specialization: Artificial Intelligence & Machine Learning
 GitHub:
 https://github.com/aarfa-12
 
-⭐ If you find this project useful or interesting, consider giving the repository a star.
+⭐ If you find this project useful or interesting, consider giving the repository a star.```
 
 
 
