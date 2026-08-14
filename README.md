@@ -27,7 +27,7 @@ The application returns a predicted mental health score.
 
 ### 🔍 Explainable AI with SHAP
 
-MindSense uses **SHAP (SHapley Additive exPlanations)** to provide an explanation of the model prediction.
+MindSense AI uses **SHAP (SHapley Additive exPlanations)** to provide an explanation of the model prediction.
 
 This helps users understand which input features contributed to the predicted score instead of treating the model as a complete black box.
 
@@ -142,10 +142,10 @@ The complete application is deployed on **Render** and can be accessed through t
           ┌────────┴─────────┐
           │                  │
           ▼                  ▼
-   ┌─────────────┐    ┌───────────────┐
+   ┌─────────────┐    ┌────────────────┐
    │     SHAP    │    │ Recommendations│
    │ Explanation │    │                │
-   └─────────────┘    └───────────────┘
+   └─────────────┘    └────────────────┘
                    │
                    ▼
           ┌─────────────────┐
@@ -256,7 +256,7 @@ https://mental-health-score-prediction-61cy.onrender.com
 ---
 ## ⚠️ Disclaimer
 
-MindSense is an educational machine learning project.
+MindSense AI is an educational machine learning project.
 
 The predictions and recommendations provided by this application should not be considered medical advice, diagnosis, or treatment and should not replace professional medical or mental health evaluation.
 
