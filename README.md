@@ -9,9 +9,9 @@ https://mental-health-score-prediction-61cy.onrender.com
 
 ## 📌 Overview
 
-**MindSense** is a machine learning-based web application designed to provide an estimated mental health score based on user-provided information.
+**MindSense AI ** is a machine learning-based web application designed to provide an estimated mental health score based on user-provided information.
 
-The application combines a machine learning model with an interactive web interface and explainable AI techniques. Instead of displaying only a prediction, MindSense also provides information about the factors contributing to the prediction and generates recommendations based on the result.
+The application combines a machine learning model with an interactive web interface and explainable AI techniques. Instead of displaying only a prediction, MindSense AI also provides information about the factors contributing to the prediction and generates recommendations based on the result.
 
 The application is built as a full-stack ML project with a Python/FastAPI backend, JavaScript-based frontend, SQLite database, and a trained machine learning model.
 
@@ -154,7 +154,7 @@ The complete application is deployed on **Render** and can be accessed through t
 
 
 ```
-
+---
 ## 📂 Project Structure
 
 ```text
@@ -184,7 +184,7 @@ mental-health-score-prediction/
 ├── .gitignore
 └── README.md
 ```
-
+---
 ## 🧠 How It Works
 ```text
 User Input
@@ -205,7 +205,7 @@ Mental Health Score
 └───────────────────────┘
 
 ```
-
+---
 ## ⚙️ Run Locally
 
 ### 1. Clone the Repository
@@ -242,7 +242,7 @@ uvicorn main:app --reload
 
 http://127.0.0.1:8000
 
-
+---
 ## 🌐 Deployment
 
 The application is deployed on Render.
@@ -253,12 +253,14 @@ The FastAPI backend serves the frontend and handles the machine learning predict
 
 https://mental-health-score-prediction-61cy.onrender.com
 
+---
 ## ⚠️ Disclaimer
 
 MindSense is an educational machine learning project.
 
 The predictions and recommendations provided by this application should not be considered medical advice, diagnosis, or treatment and should not replace professional medical or mental health evaluation.
 
+---
 ### 👩‍💻 Author
 
 Aarfa Fatima
